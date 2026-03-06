@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zhmurki — Film Library Entry</title>
+
+  <!-- External CSS (keep your main styles here) -->
+  <link rel="stylesheet" href="zhemurki.css">
+
+  <!-- Background + floating-box helper styles (keeps CSS in a single place for the background) -->
+  <style>
+    /* Page background */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-image: url("images/istockphoto-499688604-612x612.jpg"); /* change name/path if needed */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* keeps it fixed while scrolling */
+      position: relative;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Slight dark overlay so text is readable over the image */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.25);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Floating container sits above the background and allows it to be visible around corners */
+    .floating {
+      position: relative;
+      z-index: 1;                /* above background overlay */
+      max-width: 1100px;
+      margin: 48px auto;
+      padding: 24px;
+      border-radius: 16px;
+      /* semi-transparent so the background is slightly visible through the panel */
+      background: rgba(255,255,255,0.82);
+      /* blur what's behind the panel (works in modern browsers) */
+      -webkit-backdrop-filter: blur(6px) saturate(1.05);
+      backdrop-filter: blur(6px) saturate(1.05);
+      box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+      border: 1px solid rgba(255,255,255,0.45);
+      overflow: hidden;
+    }
+
+    /* soft blurred halo outside the panel edges to make the transition gentle */
+    .floating::before {
+      content: "";
+      position: absolute;
+      inset: -14px;
+      z-index: -1;
+      border-radius: 20px;
+      filter: blur(22px);
+      background: rgba(255,255,255,0.12);
+      pointer-events: none;
+    }
+
+    /* Small-screen tweaks if external CSS doesn't handle them */
+    @media (max-width: 900px) {
+      .floating { margin: 18px; padding: 18px; border-radius: 12px; }
+    }
+  </style>
+</head>
+  
+<body>
+  
+
+    <header class="site-header">
+     <div class="header-inner">
+      
+      <div class="title">
+        <h3>Morphine (2008) — Overview</h3>
+      </div>
+      
+      <nav aria-label="Quick navigation" class="top-nav">
+        <a href="#synopsis">Synopsis.....</a>
+        <a href="#director">Director...</a>
+        <a href="#cast">Cast....</a>
+        <a href="#clips">Clips...</a>
+        <a href="#credits">Credits</a>
+      </nav>
+      
+      </div>
+    </header>
+
+    <main class="content">
+      
+    </main>
+
+    <footer class="site-footer">
+      
+    </footer>
+
+  
+</body>
+
+  <body>
+  <!-- Floating container holds everything except the background image -->
+  <div class="floating">
+
+
+    <main class="content">
+      <div class="meta">
+        <div class="year" aria-label="Year of release">2005</div>
+        <div class="muted">Genre: Noir / Drama</div> <div class="muted">Country: Russia</div>
+      </div>
+
+      <div class="grid">
+        <!-- Main column -->
+        <section class="main-column" id="synopsis" aria-labelledby="synopsis-heading">
+          <h1 id="synopsis-heading">Short description</h1>
+          <p class="lead">
+            The year is 1917. We are in the Russian countryside. It is the middle of freezing winter. A pale young, newly educated doctor arrives. Having to deal with one medical challenge after another he soon becomes the center of everyone's attention. To soothe the impressions of human suffering he turns to morphine.
+          </p>
+          
+          <h2 id="director">Director</h2>
+          <p><strong>Aleksei Balabanov</strong> — a filmmaker known for mixing bleak humor with raw depictions of Russian life.
+          In <em>Zhmurki</em>, he uses exaggerated characters and violent set pieces to critique social collapse.</p>
+
+          <h2 id="analysis">Selected Reviews</h2>
+          8/10 <img src="images/pngimg.com - star_PNG41474.png" alt="Actor 2 photo" height="16">
+          <p>Powerful and bizarre tale of the young medical doctor sliding into the abyss of drug addiction as the country around him slides into the horrors of civil war. Even so the revolution and the war is hardly shown in the movie (which is set in a small Siberian village), one could feel it's dark presence in every scene, every dialogue. Surprisingly well captures the spirit of autobiographical novels of Mikhail Bulgakov, Russia's greatest and most controversial author of the 20th century. Strongly recommended for everyone who enjoys Bulgakov, Dostoevsky, classical Russian literature and history. Also, it's a great tribute to the director/screenwriter Sergei Bodrov Jr. who died so tragically at the height of his career.</p>
+          <h2 id="clips">Embedded clips</h2>
+          <p class="lead">Three clips and one trailer from the film</p>
+
+          <div class="clips">
+            <div class="video">
+              
+<iframe
+    width="400"
+    height="170"
+    src="https://www.youtube.com/embed/dfxJI-URjcY"
+    title="Film Scene"
+    frame-border="1"
+    allowfullscreen>
+</iframe>
+            </div>
+
+            <div class="video">
+             
+<iframe
+    width="400"
+    height="170"
+    src="https://www.youtube.com/embed/rpJqD9tsyr4"
+    title="Film Scene"
+    frame-border="1"
+    allowfullscreen>
+</iframe>
+
+            <div class="video">
+              
+<iframe
+    width="400"
+    height="170"
+    src="https://www.youtube.com/embed/R_vLF2_QWns"
+    title="Film Scene"
+    frame-border="1"
+    allowfullscreen>
+</iframe>
+            </div>
+          </div>
+
+          <h2 id="credits">Credits</h2>
+          <p style="margin:0;">Written &amp; directed by: Aleksei Balabanov</p>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" aria-labelledby="cast-heading">
+          <section id="cast" aria-labelledby="cast-heading">
+            <h2 id="cast-heading">Poster (selected)</h2>
+            <img src="images/81kX22BR-tL._AC_UF894,1000_QL80_.jpg" alt="Blog Image3" width="350">
+            <h2 id="cast-heading">Cast (select)</h2>
+            <div class="cast">
+              <div class="actor">
+                <img src="images/237686929852305-nm_200.jpg" alt="Actor 1 photo" width="170">
+                <div>
+                  <div class="name">Leonid Bichevin</div>
+                  <div class="muted">Role: Dr. Polyakov</div>
+                </div>
+              </div>
+
+              <div class="actor">
+                 <img src="images/download.jpg" alt="Actor 1 photo" width="170">
+                <div>
+                  <div class="name">Katarina Radivojević</div>
+                  <div class="muted">Role: Ekaterina Karlovna</div>
+                </div>
+              </div>
+
+              <div class="actor">
+                 <img src="images/images22.webp" alt="Actor 1 photo" width="170">
+                <div>
+                  <div class="name">Sergei Garmash</div>
+                  <div class="muted">Role: Vasily Sobarevsky (example)</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="notes">
+            <h2>Library notes</h2>
+            <p class="muted">Use this as a template for each film entry. Create separate pages for a multi-film library and link them together.</p>
+                     <!-- LINK TO FULL PAGE -->
+    <a href="SCRIPT3.html" class="read-more-btn">
+        View Full Script →
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Film Library Project • Homage to Aleksei Balabanov</p>
+    </footer>
+  </div>
+</body>>
+</html>
+
+    
