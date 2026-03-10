@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zhmurki — Film Library Entry</title>
+  <meta name="description" content="Library-style entry for the film Zhmurki (2005) — synopsis, director, cast, clips, credits." />
+  <style>
+    :root{
+      --max-width:1100px;
+      --card-bg:#f7f7f7;
+      --muted:#666;
+      --accent:#222;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{margin:0; background:#fff; color:#111; display:flex; justify-content:center; padding:28px;}
+    .container{max-width:var(--max-width); width:100%;}
+    header.site-header{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:20px;}
+    header .title{font-size:1.6rem; font-weight:700;}
+    nav a{margin-left:12px; color:var(--muted); text-decoration:none; font-size:.95rem;}
+    main{background:var(--card-bg); padding:22px; border-radius:10px; box-shadow:0 6px 18px rgba(20,20,20,.06);}
+    .meta{display:flex; gap:18px; align-items:center; margin-bottom:16px; flex-wrap:wrap;}
+    .meta .year{background:#fff; padding:8px 10px; border-radius:6px; font-weight:600; border:1px solid #e6e6e6;}
+    .grid{display:grid; grid-template-columns: 1fr 320px; gap:20px;}
+    article.section{padding:8px 0;}
+    h1,h2{margin:0 0 10px 0;}
+    h1{font-size:1.5rem;}
+    h2{font-size:1.05rem; color:var(--accent); margin-top:18px;}
+    p.lead{color:var(--muted); line-height:1.5; margin:0 0 12px 0;}
+    .cast{display:flex; gap:12px; flex-direction:column;}
+    .actor{display:flex; gap:10px; align-items:center; background:#fff; padding:10px; border-radius:8px; border:1px solid #eee;}
+    .actor img{width:64px; height:64px; object-fit:cover; border-radius:6px;}
+    .actor .name{font-weight:600;}
+    .clips iframe{width:100%; height:180px; border:0; border-radius:6px;}
+    footer.site-footer{margin-top:18px; font-size:.9rem; color:var(--muted); text-align:center;}
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr; }
+      .clips iframe{height:210px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header class="site-header" aria-label="Film header">
+      <div class="title">Zhmurki — Library Entry</div>
+      <nav aria-label="Quick navigation">
+        <a href="#synopsis">Synopsis</a>
+        <a href="#director">Director</a>
+        <a href="#cast">Cast</a>
+        <a href="#clips">Clips</a>
+        <a href="#credits">Credits</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="meta" aria-hidden="false">
+        <div class="year" aria-label="Year of release">2005</div>
+        <div style="font-size:.95rem; color:var(--muted)">Genre: Black comedy / Crime</div>
+        <div style="font-size:.95rem; color:var(--muted)">Country: Russia</div>
+      </div>
+
+      <div class="grid">
+        <!-- Main column -->
+        <section class="main-column" aria-labelledby="synopsis">
+          <article id="synopsis" class="section" aria-labelledby="synopsis-heading">
+            <h1 id="synopsis-heading">Short description</h1>
+            <p class="lead">
+              Zhmurki is a darkly comic, violent portrait of the post-Soviet 1990s. The story follows two small-time criminals
+              who, after a bungled job, are sent on a string of absurd and brutal errands. The film blends slapstick-like sequences
+              with sudden bursts of cruelty, turning the chaos of the era into a grotesque, satirical "game."
+            </p>
+            <p>
+              The title refers to a children's game similar to "blind man's buff" — an ironic lens through which the film examines
+              blind greed, moral blindness, and the unpredictability of life during the "wild 90s."
+            </p>
+          </article>
+
+          <article id="director" class="section" aria-labelledby="director-heading">
+            <h2 id="director-heading">Director</h2>
+            <p><strong>Aleksei Balabanov</strong> — a filmmaker known for mixing bleak humor with raw depictions of Russian life. In <em>Zhmurki</em>
+            Balabanov uses exaggerated characters and violent set pieces to critique social collapse and moral confusion.</p>
+            <dl>
+              <dt>Notable traits</dt>
+              <dd style="color:var(--muted)">satirical tone, abrupt violence, morally ambiguous characters</dd>
+            </dl>
+          </article>
+
+          <article id="analysis" class="section" aria-labelledby="analysis-heading">
+            <h2 id="analysis-heading">Why this film matters (brief)</h2>
+            <p>
+              As both a period piece and a genre parody, the film captures the absurdity and lawlessness of a transitional moment in Russian history.
+              Its mix of humor and horror leaves a lingering impression — the audience is invited to laugh, then immediately confront the consequences.
+            </p>
+          </article>
+
+          <article id="clips" class="section" aria-labelledby="clips-heading">
+            <h2 id="clips-heading">Embedded clips</h2>
+            <p class="lead">Replace the placeholder IDs with real YouTube video IDs from scenes or trailers.</p>
+
+            <div class="clips" aria-live="polite">
+              <!-- Replace YOUTUBE_ID_1 etc with actual YouTube IDs -->
+              <div style="margin-bottom:12px;">
+                <label style="display:block; font-weight:600; margin-bottom:6px;">Clip 1 — iconic scene</label>
+                <iframe src="https://www.youtube.com/embed/YOUTUBE_ID_1" title="Zhmurki clip 1" allowfullscreen loading="lazy"></iframe>
+              </div>
+
+              <div style="margin-bottom:12px;">
+                <label style="display:block; font-weight:600; margin-bottom:6px;">Clip 2 — darkly comic sequence</label>
+                <iframe src="https://www.youtube.com/embed/YOUTUBE_ID_2" title="Zhmurki clip 2" allowfullscreen loading="lazy"></iframe>
+              </div>
+
+              <div>
+                <label style="display:block; font-weight:600; margin-bottom:6px;">Clip 3 — trailer / montage</label>
+                <iframe src="https://www.youtube.com/embed/YOUTUBE_ID_3" title="Zhmurki clip 3" allowfullscreen loading="lazy"></iframe>
+              </div>
+            </div>
+          </article>
+
+          <article id="credits" class="section" aria-labelledby="credits-heading">
+            <h2 id="credits-heading">Credits</h2>
+            <p style="margin:0;">Written &amp; directed by: Aleksei Balabanov</p>
+            <p style="margin:0;">Cinematography, editing, production — list as needed.</p>
+          </article>
+        </section>
+
+        <!-- Sidebar column -->
+        <aside class="sidebar" aria-labelledby="cast-heading">
+          <section id="cast" class="section" aria-labelledby="cast-heading">
+            <h2 id="cast-heading">Cast (select)</h2>
+            <div class="cast" role="list">
+              <!-- Replace placeholder images and names with real actor photos and names -->
+              <div class="actor" role="listitem">
+                <img src="https://via.placeholder.com/150?text=Actor+1" alt="Actor 1 photo">
+                <div>
+                  <div class="name">Actor Name 1</div>
+                  <div style="font-size:.9rem; color:var(--muted)">Role: Seryoga (example)</div>
+                </div>
+              </div>
+
+              <div class="actor" role="listitem">
+                <img src="https://via.placeholder.com/150?text=Actor+2" alt="Actor 2 photo">
+                <div>
+                  <div class="name">Actor Name 2</div>
+                  <div style="font-size:.9rem; color:var(--muted)">Role: Simon (example)</div>
+                </div>
+              </div>
+
+              <div class="actor" role="listitem">
+                <img src="https://via.placeholder.com/150?text=Actor+3" alt="Actor 3 photo">
+                <div>
+                  <div class="name">Actor Name 3</div>
+                  <div style="font-size:.9rem; color:var(--muted)">Role: Crime boss (example)</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" aria-labelledby="resources-heading">
+            <h2 id="resources-heading">Library notes</h2>
+            <p style="color:var(--muted); font-size:.95rem; margin:0;">
+              Use this HTML file as a template for each film entry. For a 5-film library, create separate pages and link them in the header nav,
+              ordering them chronologically.
+            </p>
+          </section>
+        </aside>
+      </div>
+
+      <footer class="site-footer" role="contentinfo">
+        <p>Created as a library-style homage. Replace placeholders (images, YouTube IDs, cast names) with real assets and credits.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
+    
